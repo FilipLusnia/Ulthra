@@ -7,6 +7,6 @@ export async function getUsers() {
 			.selectAll()
 			.execute();
 	} catch (error) {
-		return `Error getting users: ${error}`;
+		return `error getting users: ${error}`;
 	}
 }
