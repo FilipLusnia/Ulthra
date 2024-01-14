@@ -6,13 +6,9 @@ export default function Home() {
 			<Head>
 				<title>Ulthra | Store</title>
 			</Head>
-			<main className="flex flex-col justify-center min-h-screen">
-				<div className="flex justify-center">
-					<h1 className=" font-light tracking-tight ">
-						Ulthra
-					</h1>
-				</div>
-			</main>
+			<div>
+				
+			</div>
 		</>
   	);
 }

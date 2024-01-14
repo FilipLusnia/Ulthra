@@ -8,7 +8,6 @@
 		"dev": "next dev",
 		"lint": "next lint",
 		"start": "next start",
-
 		"migrate-db-up": "tsx ./src/server/database/migrations/%npm_config_mgrnumber%_migration/%npm_config_mgrnumber%_up.ts",
 		"migrate-db-down": "tsx ./src/server/database/migrations/%npm_config_mgrnumber%_migration/%npm_config_mgrnumber%_down.ts"
 	},
@@ -31,6 +30,7 @@
 		"zod": "^3.22.4"
 	},
 	"devDependencies": {
+		"@svgr/webpack": "^8.1.0",
 		"@types/eslint": "^8.44.7",
 		"@types/node": "^18.17.0",
 		"@types/pg": "^8.10.9",

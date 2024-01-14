@@ -20,7 +20,7 @@
 	}
 
 	html {
-		@apply text-slate-50;
+		@apply text-slate-300;
 		@apply bg-gradient-to-br from-slate-950 to-slate-800;
 		@apply font-poppins;
 		@apply min-h-screen;
@@ -28,9 +28,16 @@
 
 	h1 {
 		@apply text-7xl;
+		@apply text-slate-50;
 	}
 
 	h2 {
 		@apply text-5xl;
+		@apply text-slate-50;
+	}
+
+	a {
+		@apply text-slate-50;
+		@apply hover:text-orange-500
 	}
 }
