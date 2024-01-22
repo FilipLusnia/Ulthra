@@ -1,12 +1,14 @@
+import Footer from "./footer";
 import Header from "./header";
 
 function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<>
 			<Header/>
-			<main className="flex flex-col justify-center min-h-screen">
+			<main className="min-h-screen pt-16 flex flex-col items-center">
 				{children}
 			</main>
+			<Footer/>
 		</>
 	)
 } 

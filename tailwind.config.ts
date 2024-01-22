@@ -7,7 +7,7 @@ const config: Config = {
 			fontFamily: {
 			  'poppins': ['Poppins'],
 			},
-		},
+		}
 	},
 	plugins: [],
 };
