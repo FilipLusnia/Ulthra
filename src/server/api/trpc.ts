@@ -47,12 +47,9 @@ const createInnerTRPCContext = ({ session }: CreateContextOptions) => {
  *
  * @see https://trpc.io/docs/context
  */
-export const createTRPCContext = async ({ req, res, }: CreateNextContextOptions) => {
-  // Get the session from the server using the getServerSession wrapper function
+export const createTRPCContext = async ({ req, res }: CreateNextContextOptions) => {
 	const session = await getServerAuthSession({ req, res });
-	return createInnerTRPCContext({
-		session,
-	});
+	return createInnerTRPCContext({ session });
 };
 
 /**
@@ -109,7 +106,7 @@ export const publicProcedure = t.procedure;
  */
 export const protectedProcedure = t.procedure.use(({ ctx, next }) => {
 	if (!ctx.session || !ctx.session.user) {
-		throw new TRPCError({ code: "UNAUTHORIZED" });
+		throw new TRPCError({ code: 'UNAUTHORIZED', message: 'You do not have access to this resource.' });
 	}
 	return next({
 		ctx: {

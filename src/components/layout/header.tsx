@@ -1,3 +1,4 @@
+"use client"
 import { mobileBreakPoint } from "../../../constants";
 import Link from "next/link";
 import { useLayoutEffect, useState } from "react";

@@ -19,9 +19,7 @@ export const authOptions: NextAuthOptions = {
 			}
 		})
 	},
-	providers: [
-
-	]
+	providers: []
 };
 
 export const getServerAuthSession = (ctx: {
